@@ -1,0 +1,286 @@
+.container {
+    margin: 0;
+    width: 100%;
+    height: 720px;
+    background-color: rgb(240,240,240);
+    overflow: scroll;
+  }
+  #nav {
+    height:80px;
+    width: 100%;
+    background-color: rgb(124,139,240);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    box-shadow: 2px 2px 5px grey;
+  }
+  #nav a {
+    text-decoration: none;
+    color: white;
+  }
+  .nav-brand {
+    margin-left: 40px;
+    align-self: center;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px black;
+    font-style: italic;
+  }
+  .nav-items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+  }
+  .nav-items li {
+    margin-left: 15px;
+  }
+  .nav-items a {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .nav-items a:hover {
+    background-color: lightgray;
+    font-size: 20px;
+    color: black;
+  }
+  #home{
+    margin-top:80px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1513135065346-a098a63a71ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1649&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #home h3 {
+    font-family: 'Times New Roman';
+    font-size: 32px;
+    color: brown;
+  }
+  #home a {
+    padding: 20px 40px;
+    background-color: white;
+    color: rgb(124,139,240);
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+  }
+  #home a:hover {
+    background-color: rgb(124,139,240);
+    color: white;
+    border: 1px solid;
+    border-radius: 10px;
+  }
+  #about {
+    height: 400px;
+    background-color: rgb(250,250,250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  #about img {
+    width: 300px;
+    height: 300px;
+    margin-right: 80px;
+    margin-left: 40px;
+    border: 2px solid white;
+    border-radius: 200px;
+  }
+  #about p {
+    width: 30%;
+    line-height: 1.6;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+  #service {
+    height: 250px;
+    background-color: rgba(153,76,0,0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: serif;
+  }
+  #service li {
+    font-size: 20px;
+  }
+  #recepe {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 0;
+    background-color: rgba(240,240,240,0.5);
+  }
+  #recepe h3 {
+    align-self: center;
+    font-size: 24px;
+    font-family: serif;
+  }
+  .sample-recepe {
+    display: flex;
+    justify-content: center;
+  }
+  .element {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  .element p{
+    font-size: 14px;
+    font-family: serif;
+    font-style: italic;
+  }
+  .element:hover {
+    box-shadow: 2px 2px 5px grey;
+  }
+  #contact {
+    margin-top: 0;
+    height: 230px;
+    background-color: rgba(51,0,0,0.7);
+    color: white;
+    padding: 15px;
+  }
+  #contact p:first-child {
+    font-size: 24px;
+    font-style: italic;
+  }
+  #contact p{
+    font-size: 22px;
+    font-family: serif;
+    text-align: center;
+    margin-top: 30px;
+  }
+  footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top:0px;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width:770px){
+    #about {
+    height: 400px;
+    background-color: rgb(250,250,250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    
+  }
+  
+  #about img {
+    width: 300px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 200px;
+  }
+  #about p {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+  }
+  
+  @media only screen and (max-width: 690px){
+    #about img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 200px;
+  }
+  #about p {
+    width: 100%;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  
+  #service {
+    font-size: 18px;
+    font-family: serif;
+  }
+  #service li {
+    font-size: 16px;
+  }
+  
+  #recepe {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    background-color: rgba(240,240,240,0.5);
+    
+  }
+  #recepe h3 {
+    align-self: center;
+    font-size: 16px;
+    font-family: serif;
+  }
+  .sample-recepe {
+    display: block
+  }
+  .element {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5; 
+    float: left;
+  }
+  .element p{
+    font-size: 12px;
+    font-family: serif;
+    font-style: italic;
+  }
+  
+  #nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    box-shadow: 2px 2px 5px grey;
+  }
+  
+  .nav-brand {
+    margin-left: 10px;
+    align-self: center;
+    font-size: 18px;
+    text-shadow: 2px 2px 5px black;
+    font-style: italic;
+  }
+  .nav-items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+  }
+  .nav-items li {
+    margin-left: 5px;
+  }
+  .nav-items a {
+    padding: 5px;
+    font-size: 14px;
+  }
+  .nav-items a:hover {
+    background-color: lightgray;
+    font-size: 16px;
+    color: black;
+  }
+  
+  }
